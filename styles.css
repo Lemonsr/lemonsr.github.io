@@ -1,0 +1,97 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+/* Website gradient background */
+.screen {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(221deg, #5D8AB1, #716BC7, #13153E, #7a5dca, #333D6D);
+    background-size: 1000%, 1000%;
+    position: fixed;
+    -webkit-animation: change 30s ease infinite;
+    -moz-animation: change 30s ease infinite;
+    animation: change 30s ease infinite;
+}
+
+/* Animations for gradient background */
+@-webkit-keyframes change {
+    0%{background-position:74% 0%}
+    50%{background-position:27% 100%}
+    100%{background-position:74% 0%}
+}
+@-moz-keyframes change {
+    0%{background-position:74% 0%}
+    50%{background-position:27% 100%}
+    100%{background-position:74% 0%}
+}
+@keyframes change {
+    0%{background-position:74% 0%}
+    50%{background-position:27% 100%}
+    100%{background-position:74% 0%}
+}
+
+#circle-blue {
+    height: 405px;
+    width: 405px;
+    background-color: #6ED5FF;
+    top: 10%;
+    left: 15%;
+    opacity: 59%;
+    mix-blend-mode: screen;
+    animation: anim-circle-blue 40s ease-in-out infinite;
+}
+
+#circle-orange {
+    height: 529px;
+    width: 529px;
+    background-color: #FFBE88;
+    top: 60%;
+    left: 60%;
+    opacity: 79%;
+    mix-blend-mode: hard-light;
+    animation: anim-circle-orange 45s ease-in-out infinite;
+}
+
+.float-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+@keyframes anim-circle-blue {
+    0%{top: 10%}
+    50%{top: 30%}
+    100%{top: 10%}
+}
+@keyframes anim-circle-orange {
+    0%{top: 60%}
+    25%{top: 30%}
+    50%{top: 50%}
+    75%{top: 40%}
+    100%{top: 60%}
+}
+
+/* Responsive circles */
+@media screen and (max-width: 1000px) {
+    #circle-blue {
+        height: 30%;
+        width: 30vh;
+    }
+    #circle-orange {
+        height: 40%;
+        width: 40vh;
+    }
+}

@@ -19,8 +19,8 @@ html {
     width: 100%;
     height: 100vh;
     color: #fff;
-    background: linear-gradient(221deg, #5D8AB1, #716BC7, #13153E, #7a5dca, #333D6D);
-    background-size: 1000%, 1000%;
+    background: linear-gradient(221deg, #3d709c, #5078c2, #13153E, #7a5dca, #5dabca, #333D6D);
+    background-size: 1200%, 1200%;
     position: fixed;
     -webkit-animation: change 30s ease infinite;
     -moz-animation: change 30s ease infinite;
@@ -138,6 +138,7 @@ h1 {
 
 h2 {
     font-size: 3em;
+    padding-top: 8px;
 }
 
 /* Hide frosted glass for smaller height */

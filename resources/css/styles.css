@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Lato:100";
+@import "https://fonts.googleapis.com/css?family=Varela+Round";
 
 * {
     margin: 0;
@@ -96,23 +97,52 @@ html {
     }
 }
 
+/* Frosted glass effect */
 .glass-rect-base {
     position: absolute;
     left: 8%;
     right: 8%;
     top: 38%;
     bottom: 10%;
-    border-radius: 81px;
+    border-radius: 60px;
 }
 
 .glass-rect {
     background-color: #fff;
-    opacity: 80%;
+    opacity: 40%;
     mix-blend-mode: soft-light;
     backdrop-filter: blur(80px);
 }
 
 .glass-rect-border {
     border: 1px solid #fff;
-    opacity: 40%;
+    opacity: 30%;
+}
+
+/* Header text formatting */
+.header {
+    margin-top: 6%;
+}
+
+.header-text {
+    font-family: Varela Round;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0px 0px 5px #8fddff;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+/* Hide frosted glass for smaller height */
+@media screen and (max-height: 690px) {
+    .glass-rect-base {
+        visibility: hidden;
+    }
 }

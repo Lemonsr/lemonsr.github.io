@@ -3,3 +3,5 @@
 [This](https://lemonsr.github.io/) is my personal portfolio hosted with Github pages.
 
 The UI design is illustrated using Adobe XD, and the isometric room design is made with Blender.
+
+Contents of this site are © Copyright 2021 Xin Yan. All rights reserved.

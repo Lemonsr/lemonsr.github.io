@@ -95,3 +95,24 @@ html {
         width: 40vh;
     }
 }
+
+.glass-rect-base {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 38%;
+    bottom: 10%;
+    border-radius: 81px;
+}
+
+.glass-rect {
+    background-color: #fff;
+    opacity: 80%;
+    mix-blend-mode: soft-light;
+    backdrop-filter: blur(80px);
+}
+
+.glass-rect-border {
+    border: 1px solid #fff;
+    opacity: 40%;
+}
